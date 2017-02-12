@@ -1,0 +1,1 @@
+var counterTpl="<ul class='countLi'><li><h1>title</h1></li><li><h3>firstclick<span>0</span></h3></li><li><h3>secondclick<span>0</span></h3></li><li><h3>thirdclick<span>0</span></h3></li></ul>"

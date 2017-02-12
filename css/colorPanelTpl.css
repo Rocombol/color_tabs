@@ -1,0 +1,14 @@
+ul{
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+
+
+
+.changeColors {
+    width: 100%;
+    height: 100px;
+	display: inline-block;
+}
