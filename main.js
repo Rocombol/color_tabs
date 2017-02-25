@@ -1,8 +1,16 @@
 'use strict';
-document.addEventListener ('DOMContentLoaded', function () {
-    var colorPanel = new ColorPanel('ColorPanel', 'blue', 'red', 'green'),
-        colorPanelView = new ColorPanelView();
 
-    colorPanelView.createPanel(colorPanel.colorPanelHash());
+var colorCounter = new ColorCounter(),
+    colorView = new ColorView(),
+    counterView = new CounterView(colorCounter),
+    buttonView = new ButtonView(colorCounter);
 
-}, false);
+document.addEventListener('DOMContentLoaded', createPalette, false);
+
+function createPalette(){
+    buttonView.renderButtons();
+    counterView.renderCounters();
+
+    colorCounter.on('change', colorView.renderColor);
+    colorCounter.on('change', counterView.renderCounters);
+}

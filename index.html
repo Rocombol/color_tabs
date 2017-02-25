@@ -1,28 +1,25 @@
-<!Doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Change Colors Tabs</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/colorPanelTpl.css">
-    <link rel="stylesheet" href="css/counterTpl.css">
-    
-    <script src="templates/colorPanelTpl.js"></script>
-    <script src="templates/counterTpl.js"></script>
-    <script src="templates/renderTemplate.js"></script>
-      
-    <script src="model/ColorPanel.js"></script>
-    <script src="model/CounterList.js"></script>
-       
-    <script src="view/CounterListView.js"></script>
-    <script src="view/ColorPanelView.js"></script>
-    <script src="view/ChangeColorView.js"></script>
-     
-    <script src="main.js"></script>
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Color Palette</title>
+
+        <link rel="stylesheet" href="css/style.css">
+               
+        <script src="templates/inputTpl.js"></script>    
+        <script src="templates/counterViewTpl.js"></script>
+               
+        <script src="model/ColorCounter.js"></script>        
+
+        <script src="view/ButtonView.js"></script>
+        <script src="view/ColorView.js"></script>
+        <script src="view/CounterView.js"></script>
+        
+        <script src="main.js"></script>
+    </head>
     <body>
-         <div id="buttons"></div>
-         <div id="colorarea"></div>
-         <div id="countarea"></div>
+        <div id="button"></div>
+        <div id="colorarea"></div>
+        <div id="counterarea"></div>
     </body>
 </html>

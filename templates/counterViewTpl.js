@@ -1,0 +1,1 @@
+var counterViewTpl = '<h3>:color:<span>:counter</h3>';
